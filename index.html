@@ -24,7 +24,7 @@
         header {
             background: url('images/header-bg.jpg') no-repeat center center/cover;
             color: var(--secondary-color);
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
             position: relative;
         }
@@ -60,49 +60,43 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
+            display: grid;
+            grid-gap: 40px;
         }
 
         .section {
-            margin-bottom: 60px;
-            padding: 20px;
             background: var(--secondary-color);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         .section h2 {
             margin-bottom: 20px;
             font-size: 2.2rem;
             color: var(--primary-color);
-            text-align: center;
         }
 
         .section p {
             font-size: 1.2rem;
             line-height: 1.6;
-            text-align: center;
         }
 
-        .image-container {
-            text-align: center;
-            margin-bottom: 20px;
+        .section a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .trade-logo {
-            text-align: center;
-            margin-bottom: 20px;
+        .section a:hover {
+            text-decoration: underline;
         }
 
         .trade-logo img {
             width: 200px;
             height: auto;
+            margin-top: 20px;
         }
 
         .footer {
@@ -159,7 +153,7 @@
             <h2>GREAT INFRASTRUCTURE</h2>
             <p>We achieved that great performance by starting with great infrastructure. Our nodes run on enterprise grade fully dedicated servers hosted by a top 3 hosting provider in the world. We are currently running 3 Cardano Nodes on 3 servers spread across 3 continents to ensure 100% uptime and optimal connection to all parts of the network.</p>
             <div class="trade-logo">
-                <img src="images/trade-logo.png" alt="Trade Logo">
+                <img src="trade-logo.png" alt="Trade Logo">
             </div>
         </div>
 
