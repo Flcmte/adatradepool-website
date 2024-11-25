@@ -4,169 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADA Trade Pool</title>
-    <style>
-        :root {
-            --primary-color: #4A30E9;
-            --secondary-color: #ffffff;
-            --background-color: #f0f0f0;
-            --text-color: #333333;
-            --font-family: 'Arial, sans-serif';
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: var(--font-family);
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
-
-        header {
-            background: url('images/header-bg.jpg') no-repeat center center/cover;
-            color: var(--secondary-color);
-            padding: 60px 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        header h1 {
-            position: relative;
-            z-index: 2;
-            margin: 0;
-            font-size: 3rem;
-            color: var(--secondary-color);
-        }
-
-        header p {
-            position: relative;
-            z-index: 2;
-            margin: 10px 0 0;
-            font-size: 1.4rem;
-            color: var(--secondary-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            display: grid;
-            grid-gap: 40px;
-        }
-
-        .section {
-            background: var(--secondary-color);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .section h2 {
-            margin-bottom: 20px;
-            font-size: 2.2rem;
-            color: var(--primary-color);
-        }
-
-        .section p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-
-        .section a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .section a:hover {
-            text-decoration: underline;
-        }
-
-        .trade-logo img {
-            width: 200px;
-            height: auto;
-            margin-top: 20px;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-        }
-
-        .footer a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            .section h2 {
-                font-size: 1.8rem;
-            }
-
-            .section p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>ADA TRADE POOL</h1>
-        <p>Committed to providing the best Cardano staking experience at the most competitive rates</p>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white text-center py-16">
+        <h1 class="text-4xl font-bold">ADA Trade Pool</h1>
+        <p class="text-xl mt-4">Committed to the best Cardano staking experience</p>
     </header>
 
-    <div class="container">
-        <div class="section">
-            <h2>WHY ADA TRADE POOL</h2>
-            <p>To have a sustainable and consistent Cardano environment and community, we believe it is necessary to incentivize stake pool operators to use their resources in an optimal way to them. ADA they earn while staking on Cardano network is a great asset for the entire community to grow and achieve the ultimate goals we all want to reach: full decentralization and security of transactions.</p>
-            <p>Ada Trade Pool is built and maintained by Cardano enthusiasts from the first days back in 2017!</p>
-            <p>You can reach us on our <a href="https://t.me/adatradepool" target="_blank">Telegram channel</a></p>
-        </div>
+    <!-- Why Section -->
+    <section class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-semibold">Why ADA Trade Pool?</h2>
+        <p class="mt-4 text-lg">Sustainable, decentralized staking for Cardano with optimal performance.</p>
+    </section>
 
-        <div class="section">
-            <h2>GREAT INFRASTRUCTURE</h2>
-            <p>We achieved that great performance by starting with great infrastructure. Our nodes run on enterprise grade fully dedicated servers hosted by a top 3 hosting provider in the world. We are currently running 3 Cardano Nodes on 3 servers spread across 3 continents to ensure 100% uptime and optimal connection to all parts of the network.</p>
-            <div class="trade-logo">
-                <img src="trade-logo.png" alt="Trade Logo">
-            </div>
-        </div>
+    <!-- Infrastructure Section -->
+    <section class="bg-gray-200 py-16 px-6 text-center">
+        <h2 class="text-3xl font-semibold">Great Infrastructure</h2>
+        <p class="mt-4 text-lg">We run enterprise-grade servers across three continents to ensure 100% uptime.</p>
+    </section>
 
-        <div class="section">
-            <h2>EXCELLENCE IS OUR PRIORITY CARDANO IS OUR COMMITMENT</h2>
-            <p>We are committed to providing the best Cardano Staking experience possible. We will achieve this by providing excellent performance at the most competitive sustainable rates. As Cardano grows, we will grow with it. Thank you for choosing Ada Trade Pool and allowing us to be a part of this journey.</p>
-        </div>
-    </div>
+    <!-- Excellence Section -->
+    <section class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-semibold">Excellence is Our Priority</h2>
+        <p class="mt-4 text-lg">We provide competitive rates and grow with the Cardano ecosystem.</p>
+    </section>
 
-    <div class="footer">
-        <p>ADA TRADE POOL</p>
-        <p>Contact us on <a href="https://t.me/adatradepool" target="_blank">Telegram</a></p>
-        <p>Copyright &copy; 2024 | Powered by ADA TRADE POOL</p>
-    </div>
+    <!-- Contact Section -->
+    <footer class="bg-blue-600 text-white text-center py-8">
+        <p>Contact us on <a href="https://t.me/yourchannel" class="underline">Telegram</a></p>
+        <p>&copy; 2024 ADA Trade Pool</p>
+    </footer>
+
 </body>
 </html>
